@@ -38,7 +38,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # She types "Buy peacock feathers" into a text box (Edith's hobby
         # is tying fly-fishing lures)
-        inputbox.send_keys('1: Buy peacock feathers')
+        inputbox.send_keys('Buy peacock feathers')
 
         # When she hits enter, the page updates, and now the page lists
         # "1: Buy peacock feathers" as an item in a to-do list
@@ -58,7 +58,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # The page updates again, and now shows both items on her list
         self.check_for_row_in_list_table('1: Buy peacock feathers')
-        self.check_for_row_in_list_table('2: Us pacock feathers to make a fly')
+        self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
 
 
 
